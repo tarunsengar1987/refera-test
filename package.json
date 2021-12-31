@@ -1,0 +1,31 @@
+{
+  "name": "refera-fullstack-challenge-main",
+  "version": "1.0.0",
+  "description": "Real estate agency orders",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js",
+    "start": "node index.js",
+    "frontend-install": "npm install --prefix frontend",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
+    "frontend-build": "npm run build --prefix frontend"
+  },
+  "keywords": [
+    "refera"
+  ],
+  "author": "Braiberhub Solutions",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.5.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.12.4",
+    "sequelize-cli": "^6.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
